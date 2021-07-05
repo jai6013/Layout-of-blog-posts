@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>p1</title>
+    <style>
+        body{
+            font-size: 14px;
+            background-color: black;
+            margin: 0px;
+            min-height: 100%;
+        }
+      #parent {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        height: 540px;
+        background-color: white;
+      }
+      #row1, #row2, #row3, #row4{
+          text-align: center;
+          margin: auto;
+      }
+      #row1>p{
+          font-size: 8px;
+          color: orangered;
+          margin: 0px;
+      }
+      #row1>h4{
+          margin-top: 5px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .img_block{
+          width: 30%;
+          text-align: center;
+          display: inline-block;
+      }
+      span.img_block{
+          text-align: left;
+      }
+      #row2 span{
+          text-align: left;
+      }
+     
+      .date{
+          font-size: 10px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          color: silver;
+      }
+      
+      .button>button{
+          text-align: center;
+          font-size: 10px;
+          width: 100px;
+          height: 25px;
+          border: 1px solid honeydew;
+          background-color: orangered;
+          margin: 20px;
+          color: white;
+      }
+      h4+p{
+          font-size: 10px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin: 0%;
+          padding: 0%;
+      }
+      #row4{
+          display: grid;
+          text-align: center !important;
+          grid-gap: 5px;
+          grid-template-rows: auto;
+          grid-template-columns: auto;
+          background-color: white;
+          padding: 5px;
+          grid-template: "a a a"
+          "b b b"  
+          "c c c"
+          "1 2 3"
+          "4 5 6";
+      }
+      #forservice_span{
+          grid-area: a;
+          margin: 5px;
+          font-size: 10px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: red;
+      }
+      #forservice_h4{
+          grid-area: b;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 15px;
+          margin: 5px;
+      }
+      #forservice_p{
+          grid-area: c;
+          margin: 5px;
+      }
+     
+      #box1{
+          grid-area: 1;
+          margin: 1%;
+      }
+      #box2{
+          grid-area: 2;
+          margin: 1%;
+      }
+      #box3{
+          grid-area: 3;
+          margin: 1%;
+      }
+      #box4{
+          grid-area: 4;
+          margin: 1%;
+      }
+      #box5{
+          grid-area: 5;
+          margin: 1%;
+      }
+      #box6{
+          grid-area: 6;
+          margin: 1%;
+      }
+      div > img{
+          float: left;
+          padding: 5px;
+      }
+      div>span{
+          float: left;
+          font-size: 8px;
+      }
+      span>h5{
+          font-size: 12px;
+          margin: 0px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          padding: 5px;
+          
+      }
+      span > p{
+          width: 80%;
+          font-size: 8px;
+          margin-top: 0%;
+          padding: 0px;
+          text-align: center;
+          color: rgb(179, 173, 173);
+      }
+      .img+span{
+          width: 28%;
+          margin: auto;
+      }
+      #row2 .span{
+          text-align: left !important;
+          padding: 10px;
+      }
+      @media (min-width:480px){
+        #row4{
+          display: grid;
+          text-align: center !important;
+          grid-gap: 5px;
+          grid-template-rows: auto;
+          grid-template-columns: auto;
+          background-color: white;
+          padding: 5px;
+          grid-template: "a"
+          "b"  
+          "c"
+          "1"
+          "2"
+          "3"
+          "4"
+          "5"
+          "6";
+      }   
+      }
+      @media (min-width:760px){
+        #row4{
+          display: grid;
+          text-align: center !important;
+          grid-gap: 5px;
+          grid-template-rows: auto;
+          grid-template-columns: auto;
+          background-color: white;
+          padding: 5px;
+          grid-template: "a b"
+          "b b"  
+          "c c"
+          "1 2"
+          "3 4"
+          "5 6";
+      }   
+      }
+      @media (min-width:1024px){
+        #row4{
+          display: grid;
+          text-align: center !important;
+          grid-gap: 5px;
+          grid-template-rows: auto;
+          grid-template-columns: auto;
+          background-color: white;
+          padding: 5px;
+          grid-template:  "a a a"
+          "b b b"  
+          "c c c"
+          "1 2 3"
+          "4 5 6";
+      }   
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+        <div id="row1">
+            <p>NEWS & UPDATE</p>
+            <h4> Our Blog Posts</h4>
+        </div>
+        <div id="row2">
+            <div class="img_block">
+                <img src="https://via.placeholder.com/160x120" alt="">
+                <br>
+                <span class="span">
+                <span class="date">29, Jan 2021</span>
+                <br>
+                <span class="artname">Art Name</span>
+            </span>
+            </div>
+            <div class="img_block">
+                <img src="https://via.placeholder.com/160x120" alt="">
+                <br>
+                <span class="span">
+                <span class="date">29, Jan 2021</span>
+                <br>
+                <span class="artname">Art Name</span>
+            </span>
+            </div>
+            <div class="img_block">
+                <img src="https://via.placeholder.com/160x120" alt="">
+                <br>
+                <span class="span">
+                <span class="date">29, Jan 2021</span>
+                <br>
+                <span class="artname">Art Name</span>
+            </span>
+            </div>
+            
+            </div>
+            <div id="row3">
+                <div class="button">
+                    <button >View all reports</button>
+                </div>
+            </div>
+            <div id="row4">
+                <span id="forservice_span">services</span>
+                <h4 id="forservice_h4">Our services</h4>
+                <p id="forsevice_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, eveniet consequatur modi quas dolore provident.</p>
+            </div>
+                <div id="box1">
+                    <img class = "img" src="https://via.placeholder.com/20" alt="">
+                    <span> 
+                        <h5>Innovative structure</h5>
+                        <br> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, officiis. </p>
+                    </span>
+                </div>
+                <div id="box2">
+                    <img class = "img" src="https://via.placeholder.com/20" alt="">
+                    <span> 
+                        <h5>Arcitectural design</h5>
+                        <br> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, officiis. </p>
+                    </span>
+                </div>
+                <div id="box3">
+                    <img class = "img" src="https://via.placeholder.com/20" alt="">
+                    <span> 
+                        <h5>Interior design</h5>
+                        <br> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, officiis. </p>
+                    </span>
+                </div>
+                <div id="box4">
+                    <img class = "img" src="https://via.placeholder.com/20" alt="">
+                    <span> 
+                        <h5>Modern window design</h5>
+                        <br> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, officiis. </p>
+                    </span>
+                </div>
+                <div id="box5">
+                    <img class = "img" src="https://via.placeholder.com/20" alt="">
+                    <span> 
+                        <h5>Experts Arcitect</h5>
+                        <br> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, officiis. </p>
+                    </span>
+                    </div>
+                    <div id="box6">
+                        <img class = "img" src="https://via.placeholder.com/20" alt="">
+                        <span> 
+                            <h5>Sofa design</h5>
+                            <br> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, officiis. </p>
+                        </span>
+                    </div>
+            </div>
+    </div>
+  </body>
+</html>
